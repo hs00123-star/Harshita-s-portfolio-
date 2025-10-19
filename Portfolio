@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshita Sharma | Creative Marketing & PR Portfolio</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles & Configurations -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827; /* Dark background */
+      color: #E5E7EB; /* Light text */
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #F472B6, #A78BFA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #F472B6, #A78BFA);
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(244, 114, 182, 0.2);
+    }
+    .btn-secondary {
+       background-color: rgba(255, 255, 255, 0.1);
+       border: 1px solid rgba(255, 255, 255, 0.2);
+       transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Header & Hero Section -->
+  <header class="min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid-gray-700/[0.2] [mask-image:linear-gradient(to_bottom,white_5%,transparent_95%)]"></div>
+    <div class="w-full max-w-5xl mx-auto text-center z-10">
+      <div class="flex flex-col items-center">
+        <img 
+          src="data:image/jpeg;base64,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 கவர்hGZEZoR85HtEe8SFxIEDgAUIBIwFHBQQGEyQsFxwUHBzkUHB4eHBwcHJocIBwYHBgUHBgYHBwYHBgYGBgYHBgYGBgYGBgYHBgYGBgYHBgYGBgYHBgYGBgYGBgYHBgYGBgYGBgYGBgYGBgYGBgYHBhYHBgYGBhYHBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgY-8BGRQklAC//2wBDAAcFBQYFBAcGBQYIBwcIChELCgkJChUPEAwRGBUaGRgVGBcbHichGx0lHR0jLSsuIxxlLiINA2M0Ag==",
+          alt="A profile photo of Harshita Sharma" 
+          class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-pink-400/50 shadow-2xl mb-6"
+        />
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+          Harshita Sharma
+        </h1>
+        <p class="text-lg md:text-2xl font-semibold mb-6 gradient-text">
+          Marketing & PR Manager
+        </p>
+        <p class="max-w-2xl text-base md:text-lg text-gray-300 mb-8">
+          Crafting compelling brand narratives and driving growth through creative campaigns across Hospitality, F&B, and Consulting in the UK & India.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#work" class="btn-primary text-white font-bold py-3 px-8 rounded-full shadow-lg">
+            View My Work
+          </a>
+          <a href="https://www.linkedin.com/in/harshita17/" target="_blank" class="btn-secondary text-white font-bold py-3 px-8 rounded-full shadow-lg">
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About & Skills Section -->
+  <section id="about" class="py-20 md:py-32 px-4">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4 gradient-text">About Me</h2>
+        <p class="text-gray-300 mb-4 text-lg">
+          I'm a dynamic marketing professional with a passion for building brands that resonate. With extensive experience in both the UK and India, I specialize in creating integrated marketing strategies that blend digital innovation with impactful public relations.
+        </p>
+        <p class="text-gray-300 text-lg">
+          From luxury hotel launches to viral F&B campaigns, my focus is always on delivering measurable results and creating memorable brand experiences.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold mb-6 text-white">Core Competencies</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-gray-800/50 p-4 rounded-lg flex items-center gap-4">
+            <span class="text-pink-400">&#10022;</span> <span>Brand Strategy</span>
+          </div>
+          <div class="bg-gray-800/50 p-4 rounded-lg flex items-center gap-4">
+            <span class="text-purple-400">&#128241;</span> <span>Digital Marketing</span>
+          </div>
+          <div class="bg-gray-800/50 p-4 rounded-lg flex items-center gap-4">
+            <span class="text-pink-400">&#128172;</span> <span>Public Relations</span>
+          </div>
+          <div class="bg-gray-800/50 p-4 rounded-lg flex items-center gap-4">
+            <span class="text-purple-400">&#128101;</span> <span>Influencer Collaborations</span>
+          </div>
+          <div class="bg-gray-800/50 p-4 rounded-lg flex items-center gap-4">
+            <span class="text-pink-400">&#127881;</span> <span>Event Management</span>
+          </div>
+          <div class="bg-gray-800/50 p-4 rounded-lg flex items-center gap-4">
+            <span class="text-purple-400">&#128202;</span> <span>Campaign Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Work Section -->
+  <section id="work" class="py-20 md:py-32 px-4 bg-gray-900/50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-white">Selected Work</h2>
+        <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">A glimpse into brand activations, digital campaigns, and strategic projects I've led.</p>
+      </div>
+      
+      <!-- Portfolio Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1: Google Drive -->
+        <a href="https://drive.google.com/drive/folders/1uBSf9F098p0Hjdin803R-b3o7_8vDGKl" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/A78BFA/111827?text=Hospitality+Projects" alt="Marketing Campaigns & Hospitality Projects" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Marketing & Hospitality</h3>
+            <p class="text-gray-400 mb-4">A collection of comprehensive marketing campaigns and projects within the luxury hospitality sector.</p>
+            <span class="font-semibold text-pink-400 group-hover:underline">View Folder &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Project 2: Google Drive -->
+        <a href="https://drive.google.com/drive/u/3/folders/1J5wrEkaEDc27O-dugGnf9Z3su4_rZ9TW" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/F472B6/111827?text=Consulting+%26+PR" alt="Consulting & PR Collaborations" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Consulting & PR</h3>
+            <p class="text-gray-400 mb-4">Showcase of strategic PR collaborations, brand consulting work, and media activations.</p>
+            <span class="font-semibold text-pink-400 group-hover:underline">View Folder &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Instagram Links as cards -->
+        <a href="https://www.instagram.com/reel/DEFBV3_OgWL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/A78BFA/111827?text=Creative+Campaign" alt="Creative Campaign Highlight" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Creative Campaign Reel</h3>
+            <p class="text-gray-400 mb-4">A visually-driven creative campaign for a major F&B brand.</p>
+            <span class="font-semibold text-pink-400 group-hover:underline">Watch on Instagram &rarr;</span>
+          </div>
+        </a>
+        
+        <a href="https://www.instagram.com/reel/DKPH0CEo_m_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+            <img src="https://placehold.co/600x400/F472B6/111827?text=Influencer+Collab" alt="Influencer Collaboration" class="w-full h-48 object-cover">
+            <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Influencer Collaboration</h3><p class="text-gray-400 mb-4">Successful influencer marketing activation.</p><span class="font-semibold text-pink-400 group-hover:underline">Watch Reel &rarr;</span></div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DKPMd48oaRX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/A78BFA/111827?text=Event+Highlight" alt="Event Highlight" class="w-full h-48 object-cover">
+          <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Event Highlight</h3><p class="text-gray-400 mb-4">Promotional content for a special event.</p><span class="font-semibold text-pink-400 group-hover:underline">Watch Reel &rarr;</span></div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DF98Cq4olSl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/F472B6/111827?text=Brand+Campaign" alt="Brand Campaign Reel" class="w-full h-48 object-cover">
+          <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Brand Campaign</h3><p class="text-gray-400 mb-4">A key reel from a recent brand campaign.</p><span class="font-semibold text-pink-400 group-hover:underline">Watch Reel &rarr;</span></div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DBI6f7LoAfR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/A78BFA/111827?text=Hospitality+PR" alt="Hospitality PR Activation" class="w-full h-48 object-cover">
+          <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Hospitality PR Activation</h3><p class="text-gray-400 mb-4">Showcasing a successful PR event in hospitality.</p><span class="font-semibold text-pink-400 group-hover:underline">Watch Reel &rarr;</span></div>
+        </a>
+
+        <a href="https://www.instagram.com/p/DI_YoC2oGRQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/F472B6/111827?text=Digital+Collateral" alt="Digital Collateral" class="w-full h-48 object-cover">
+          <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Digital Collateral</h3><p class="text-gray-400 mb-4">An example of branded digital content.</p><span class="font-semibold text-pink-400 group-hover:underline">View Post &rarr;</span></div>
+        </a>
+        
+        <a href="https://www.instagram.com/reel/DHd85fmsOwA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+            <img src="https://placehold.co/600x400/A78BFA/111827?text=Creative+Showcase" alt="Creative Showcase" class="w-full h-48 object-cover">
+            <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Creative Showcase</h3><p class="text-gray-400 mb-4">Engaging video content for event marketing.</p><span class="font-semibold text-pink-400 group-hover:underline">Watch Reel &rarr;</span></div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/C-E-azgo2Gt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/F472B6/111827?text=Marketing+Video" alt="Hospitality Marketing Video" class="w-full h-48 object-cover">
+          <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Hospitality Marketing</h3><p class="text-gray-400 mb-4">Video content for a hospitality client.</p><span class="font-semibold text-pink-400 group-hover:underline">Watch Reel &rarr;</span></div>
+        </a>
+
+        <a href="https://www.instagram.com/p/C_7gQhzs8Oa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+            <img src="https://placehold.co/600x400/A78BFA/111827?text=Social+Campaign" alt="Social Media Campaign" class="w-full h-48 object-cover">
+            <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Social Media Campaign</h3><p class="text-gray-400 mb-4">A static post from a successful social campaign.</p><span class="font-semibold text-pink-400 group-hover:underline">View Post &rarr;</span></div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DBwEuwUI_Dq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="block bg-gray-800 rounded-2xl overflow-hidden card-hover group">
+          <img src="https://placehold.co/600x400/F472B6/111827?text=PR+Activation" alt="Event & PR Activation" class="w-full h-48 object-cover">
+          <div class="p-6"><h3 class="text-xl font-bold text-white mb-2">Event & PR Activation</h3><p class="text-gray-400 mb-4">Highlighting a successful event and PR push.</p><span class="font-semibold text-pink-400 group-hover:underline">Watch Reel &rarr;</span></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Let's Create Something Amazing.</h2>
+      <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+        I'm currently available for freelance projects and full-time opportunities. Feel free to reach out!
+      </p>
+      <a href="mailto:harshita101sa@gmail.com" class="btn-primary text-white font-bold py-3 px-8 rounded-full shadow-lg inline-block mb-8">
+        Get In Touch
+      </a>
+      <div class="border-t border-gray-700/50 pt-6">
+        <p class="text-gray-500">
+          &copy; 2025 Harshita Sharma | India | +91 97991 26111
+        </p>
+        <p class="text-gray-500 mt-1">
+          Crafted with creativity and strategy.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
